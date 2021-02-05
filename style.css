@@ -1,0 +1,383 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: hsl(257, 40%, 49%) url(./img/bg-desktop.svg) no-repeat;
+  background-size: 80%;
+}
+
+.container {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "section section article"
+    "section section footer";
+}
+.logo {
+  grid-area: header;
+}
+.logo img {
+  position: absolute;
+  grid-area: header;
+  font-family: "Poppins", sans-serif;
+  top: 3rem;
+  left: 5rem;
+}
+
+.article {
+  grid-area: article;
+  position: absolute;
+  top: 20rem;
+  right: 28rem;
+  width: 28%;
+}
+.article h1 {
+  font-size: 3rem;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.article p {
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Open-Sans";
+  margin-top: 3rem;
+  line-height: 2rem;
+  font-weight: lighter;
+}
+.section {
+  grid-area: section;
+}
+.section img {
+  position: absolute;
+  width: 46%;
+  top: 16rem;
+  left: 6rem;
+}
+.reg {
+  margin: 5rem;
+  padding: 1rem 5rem;
+  font-size: 1.8rem;
+  border-radius: 3rem;
+  color: rgb(84, 84, 221);
+  cursor: pointer;
+}
+button:hover {
+  margin: 5rem;
+  padding: 1rem 5rem;
+  font-size: 1.8rem;
+  border-radius: 3rem;
+  background: hsl(300, 69%, 71%);
+  color: rgb(234, 234, 240);
+  cursor: pointer;
+}
+.footer {
+  grid-area: footer;
+  position: absolute;
+  bottom: 1rem;
+  right: 30rem;
+}
+.footer .tw {
+  font-size: 1.2rem;
+  padding: 0.7rem;
+  padding: 0.7rem;
+  background: hsla(300, 5%, 39%, 0.212);
+  border-radius: 50%;
+  border: 0.1rem solid white;
+  color: white;
+  margin-left: 0.8rem;
+}
+footer .social:hover {
+  font-size: 1.2rem;
+  padding: 0.7rem;
+  padding: 0.7rem;
+  background: hsl(300, 69%, 71%);
+  border-radius: 50%;
+  border: 0.1rem solid white;
+  color: white;
+  margin-left: 0.8rem;
+  cursor: pointer;
+}
+
+.footer .fb {
+  font-size: 1.2rem;
+  padding: 0.7rem;
+  background: hsla(300, 5%, 39%, 0.212);
+  border-radius: 50%;
+  border: 0.1rem solid white;
+  color: white;
+}
+
+.footer .inst {
+  font-size: 1.2rem;
+  padding: 0.7rem;
+  background: hsla(300, 5%, 39%, 0.212);
+  border-radius: 50%;
+  border: 0.1rem solid white;
+  color: white;
+  margin-left: 0.5rem;
+}
+@media Screen and (max-width: 768px) {
+  body {
+    background: hsl(257, 40%, 49%) url(./img/bg-desktop.svg) no-repeat;
+    background-size: 80%;
+  }
+  .container {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "header header header"
+      "section section article"
+      "section section footer";
+  }
+  .logo {
+    grid-area: header;
+  }
+  .logo img {
+    position: absolute;
+    grid-area: header;
+    font-family: "Poppins", sans-serif;
+    top: 3rem;
+    left: 5rem;
+  }
+
+  .article {
+    grid-area: article;
+    position: absolute;
+    top: 56rem;
+    right: 10em;
+    width: 70%;
+  }
+  .article h1 {
+    font-size: 4.5rem;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  .article p {
+    font-size: 2.5rem;
+    color: white;
+    font-family: "Open-Sans";
+    margin-top: 2rem;
+    line-height: 3rem;
+    font-weight: lighter;
+    text-align: center;
+    margin-right: 8rem;
+  }
+  .section {
+    grid-area: section;
+  }
+  .section img {
+    position: absolute;
+    width: 72%;
+    top: 16rem;
+    left: 10rem;
+  }
+  .reg {
+    margin: 2rem;
+    padding: 1rem 5rem;
+    font-size: 1.6rem;
+    border-radius: 3rem;
+    color: rgb(84, 84, 221);
+    cursor: pointer;
+    width: 60%;
+  }
+  button:hover {
+    margin: 2rem;
+    padding: 1rem 5rem;
+    font-size: 1.6rem;
+    border-radius: 3rem;
+    background: hsl(300, 69%, 71%);
+    color: rgb(234, 234, 240);
+    cursor: pointer;
+    width: 60%;
+  }
+  .footer {
+    grid-area: footer;
+    position: absolute;
+    bottom: 1rem;
+    right: 35rem;
+  }
+  .footer .tw {
+    font-size: 4rem;
+    padding: 0.7rem;
+    padding: 0.7rem;
+    background: hsla(300, 5%, 39%, 0.212);
+    border-radius: 50%;
+    border: 0.1rem solid white;
+    color: white;
+    margin-left: 0.8rem;
+  }
+  footer .social:hover {
+    font-size: 1.2rem;
+    padding: 0.7rem;
+    padding: 0.7rem;
+    background: hsl(300, 69%, 71%);
+    border-radius: 50%;
+    border: 0.1rem solid white;
+    color: white;
+    margin-left: 0.8rem;
+    cursor: pointer;
+  }
+
+  .footer .fb {
+    font-size: 4rem;
+    padding: 0.7rem;
+    background: hsla(300, 5%, 39%, 0.212);
+    border-radius: 50%;
+    border: 0.1rem solid white;
+    color: white;
+  }
+
+  .footer .inst {
+    font-size: 4rem;
+    padding: 0.7rem;
+    background: hsla(300, 5%, 39%, 0.212);
+    border-radius: 50%;
+    border: 0.1rem solid white;
+    color: white;
+    margin-left: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background: hsl(257, 40%, 49%) url(./img/bg-mobile.svg) no-repeat;
+    background-size: 100%;
+  }
+  .container {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "header"
+      "section"
+      "article"
+      "footer";
+  }
+  .logo img {
+    position: absolute;
+    grid-area: header;
+    font-family: "Poppins", sans-serif;
+    top: 3rem;
+    left: 1rem;
+    width: 40%;
+  }
+
+  .section img {
+    position: absolute;
+    height: 30%;
+    width: 85%;
+    top: 10rem;
+    left: 2rem;
+  }
+
+  .article {
+    grid-area: article;
+    position: absolute;
+    top: 36rem;
+    right: 3rem;
+    width: 78%;
+  }
+  .article h1 {
+    font-size: 2rem;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  .article p {
+    font-size: 1.3rem;
+    color: white;
+    font-family: "Open-Sans";
+    margin-top: 1rem;
+    line-height: 2rem;
+    font-weight: lighter;
+    text-align: center;
+    margin-right: 8rem;
+  }
+  .reg {
+    margin: 2rem 3rem;
+    padding: 1rem 5rem;
+    font-size: 1.2rem;
+    border-radius: 3rem;
+    color: rgb(84, 84, 221);
+    cursor: pointer;
+  }
+  button:hover {
+    margin: 5rem;
+    padding: 1rem 5rem;
+    font-size: 1.2rem;
+    border-radius: 3rem;
+    background: hsl(300, 69%, 71%);
+    color: rgb(234, 234, 240);
+    cursor: pointer;
+  }
+  .footer {
+    grid-area: footer;
+    position: absolute;
+    bottom: 1rem;
+    right: 17rem;
+  }
+  .footer .tw {
+    font-size: 1.2rem;
+    padding: 0.7rem;
+    padding: 0.7rem;
+    background: hsla(300, 5%, 39%, 0.212);
+    border-radius: 50%;
+    border: 0.1rem solid white;
+    color: white;
+    margin-left: 0.8rem;
+  }
+  footer .social:hover {
+    font-size: 1.2rem;
+    padding: 0.7rem;
+    padding: 0.7rem;
+    background: hsl(300, 69%, 71%);
+    border-radius: 50%;
+    border: 0.1rem solid white;
+    color: white;
+    margin-left: 0.8rem;
+    cursor: pointer;
+  }
+
+  .footer .fb {
+    font-size: 1.2rem;
+    padding: 0.7rem;
+    background: hsla(300, 5%, 39%, 0.212);
+    border-radius: 50%;
+    border: 0.1rem solid white;
+    color: white;
+  }
+
+  .footer .inst {
+    font-size: 1.2rem;
+    padding: 0.7rem;
+    background: hsla(300, 5%, 39%, 0.212);
+    border-radius: 50%;
+    border: 0.1rem solid white;
+    color: white;
+    margin-left: 0.5rem;
+  }
+}
